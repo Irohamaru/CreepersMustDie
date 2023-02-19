@@ -1,0 +1,9 @@
+loot replace entity @s hotbar.0 loot trap:system/sale
+item replace entity @s hotbar.1 with air
+loot replace entity @s hotbar.2 loot trap:system/skip
+item replace entity @s hotbar.3 with air
+item replace entity @s hotbar.4 with air
+item replace entity @s hotbar.5 with air
+item replace entity @s hotbar.6 with air
+loot replace entity @s hotbar.7 loot trap:system/return_to_lobby
+item replace entity @s hotbar.8 with air

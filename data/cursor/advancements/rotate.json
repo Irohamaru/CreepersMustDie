@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "offhand": {
+              "count": {
+                "min": 1,
+                "max": 128
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "cursor:rotate/"
+  }
+}

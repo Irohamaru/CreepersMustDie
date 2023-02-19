@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "granite",
+    "diorite",
+    "andesite",
+    "polished_granite",
+    "polished_diorite",
+    "polished_andesite",
+    "polished_granite_stairs",
+    "polished_diorite_stairs",
+    "polished_andesite_stairs"
+  ]
+}

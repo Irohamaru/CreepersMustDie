@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"translate\":\"Push Trap\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}',Lore:['{\"translate\":\"Pushes Enemies Away From the Trap\",\"color\":\"white\",\"italic\":false}','{\"translate\":\"Trap\",\"color\":\"dark_purple\",\"italic\":false}','{\"translate\":\"Cost: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"100\",\"color\":\"green\"}]}','{\"translate\":\"Size: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"2*2\",\"color\":\"yellow\"}]}','{\"translate\":\"Face: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"translate\":\"Wall\",\"color\":\"light_purple\"}]}']},Cost:100,CustomModelData:90,Size:\"2*2\",Face:[Wall],Tags:[Trap,FixedTrap,PushTrap,Parent]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

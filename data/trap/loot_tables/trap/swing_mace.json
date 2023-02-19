@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"translate\":\"Swing Mace\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}',Lore:['{\"translate\":\"Gives a Heavy Blow to Enemies\",\"color\":\"white\",\"italic\":false}','{\"translate\":\"Trap\",\"color\":\"dark_purple\",\"italic\":false}','{\"translate\":\"Cost: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"500\",\"color\":\"green\"}]}','{\"translate\":\"Size: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"2*6\",\"color\":\"yellow\"}]}','{\"translate\":\"Face: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"translate\":\"Ceil\",\"color\":\"light_purple\"}]}']},Cost:500,CustomModelData:80,Size:\"2*6\",Face:[Ceil],Tags:[Trap,FixedTrap,SwingMace,Parent]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

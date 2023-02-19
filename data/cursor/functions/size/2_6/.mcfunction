@@ -1,0 +1,8 @@
+#Y軸
+scoreboard players operation # TrapRotation = @s TrapRotation
+execute if score # TrapRotation matches 2 run scoreboard players set # TrapRotation 0
+
+execute unless score #Success _ matches 0.. if score # TrapRotation matches 0 if data storage item: Item.tag{Face:[Floor]} if entity @s[x_rotation=0..90] positioned ~ ~0.1 ~ if block ~ ~ ~ #cursor:no_collision rotated 0 90 positioned ~-0.5 ~ ~-0.5 align xz positioned ~1 ~ ~1 run function cursor:size/2_6/y_z
+execute unless score #Success _ matches 0.. unless score # TrapRotation matches 0 if data storage item: Item.tag{Face:[Floor]} if entity @s[x_rotation=0..90] positioned ~ ~0.1 ~ if block ~ ~ ~ #cursor:no_collision rotated 0 90 positioned ~-0.5 ~ ~-0.5 align xz positioned ~1 ~ ~1 run function cursor:size/2_6/y_x
+execute unless score #Success _ matches 0.. if score # TrapRotation matches 0 if data storage item: Item.tag{Face:[Ceil]} unless entity @s[x_rotation=0..90] positioned ~ ~-0.1 ~ if block ~ ~ ~ #cursor:no_collision rotated 0 -90 positioned ~-0.5 ~ ~-0.5 align xz positioned ~1 ~ ~1 run function cursor:size/2_6/y_z
+execute unless score #Success _ matches 0.. unless score # TrapRotation matches 0 if data storage item: Item.tag{Face:[Ceil]} unless entity @s[x_rotation=0..90] positioned ~ ~-0.1 ~ if block ~ ~ ~ #cursor:no_collision rotated 0 -90 positioned ~-0.5 ~ ~-0.5 align xz positioned ~1 ~ ~1 run function cursor:size/2_6/y_x

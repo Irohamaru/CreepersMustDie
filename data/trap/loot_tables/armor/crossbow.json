@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"translate\":\"Crossbow\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}',Lore:['{\"translate\":\"A Crossbow With Rapid-Fire\",\"color\":\"white\",\"italic\":false}','{\"translate\":\"Weapon\",\"color\":\"dark_purple\",\"italic\":false}']},Unbreakable:1b,Enchantments:[{id:\"minecraft:quick_charge\",lvl:4s}],ChargedProjectiles:[{id:\"minecraft:arrow\",Count:1b}],Charged:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
