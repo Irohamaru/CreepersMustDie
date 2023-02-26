@@ -1,6 +1,6 @@
 summon minecraft:zombie_villager ~ ~ ~ {Tags:[Mob,Enemy,RouteAI,BabyRunner],Silent:1b,Team:Enemy,IsBaby:1b}
 
-data modify storage mob: HP set value 40
+data modify storage mob: HP set value 10
 data modify storage mob: FollowRange set value 0d
 data modify storage mob: MovementSpeed set value 0.4d
 data modify storage mob: Damage set value 2d
