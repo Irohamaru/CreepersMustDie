@@ -8,7 +8,7 @@ scoreboard players operation _ HP += _ _
 
 scoreboard players operation @s HP -= _ HP
 
-scoreboard players set @s StackTime -20
+function mob:ai/route/stack/reset
 scoreboard players add @s[scores={Interval=..-30}] Interval 30
 
 execute if data storage mob: Damage.Stun run function mob:damage/stun

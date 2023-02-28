@@ -1,4 +1,4 @@
-execute store success score #Success _ if entity @e[tag=Barricade,distance=..2.5]
+execute store success score #Success _ if entity @e[tag=Barricade,distance=..2]
 scoreboard players operation # BeaconDamage = @s BeaconDamage
 
 execute if entity @s[tag=RouteGuide] run function mob:ai/enemy/kill

@@ -10,4 +10,4 @@ execute if score @s FollowRange matches 36 if predicate mob:has_target/36 run sc
 execute store result entity @s[tag=!TargetFound,scores={Interval=20}] Attributes[{Name:"minecraft:generic.follow_range"}].Base double 2 run data get entity @s Attributes[{Name:"minecraft:generic.follow_range"}].Base
 tag @s[tag=!TargetFound,scores={Interval=20}] add TargetFound
 
-execute if score # Interval matches 0 run scoreboard players set @s[scores={Interval=20}] StackTime -20
+execute if score # Interval matches 0 if score @s Interval matches 20 run function mob:ai/route/stack/reset
