@@ -4,6 +4,7 @@ scoreboard objectives add UseCrossbow minecraft.used:minecraft.crossbow
 scoreboard objectives add Sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add Death minecraft.custom:minecraft.deaths
 scoreboard objectives add Talk minecraft.custom:minecraft.talked_to_villager
+scoreboard objectives add LeaveGame minecraft.custom:minecraft.leave_game
 scoreboard objectives add Health health
 scoreboard objectives add ID dummy
 scoreboard objectives add ParentID dummy
@@ -30,6 +31,9 @@ scoreboard objectives add Crusher dummy
 scoreboard objectives add Burning dummy
 scoreboard objectives add Masher dummy
 scoreboard objectives add Stun dummy
+
+scoreboard objectives setdisplay sidebar Display
+scoreboard objectives setdisplay belowName Health
 
 scoreboard players set #2 _ 2
 scoreboard players set #3 _ 3
