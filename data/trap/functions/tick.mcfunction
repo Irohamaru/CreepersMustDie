@@ -9,4 +9,5 @@ execute if entity @s[tag=SpringTrap] run function trap:spring_trap/
 execute if entity @s[tag=Mace] run function trap:swing_mace/
 execute if entity @s[tag=Piston] run function trap:push_trap/
 execute if entity @s[tag=MasherHead] run function trap:masher/
+execute if entity @s[tag=IronGolem,nbt=!{AbsorptionAmount:1000000f}] run function trap:iron_golem/damaged
 execute if entity @s[tag=VoidWall] run function trap:void_wall/
