@@ -1,6 +1,6 @@
 title @a times 20 100 20
-title @a subtitle {"translate":"5秒後に拠点に戻ります","bold":true,"color":"green"}
-title @a title [{"text":"防衛成功!","color":"gold","underlined":true}]
+title @a subtitle {"translate":"Return to the Lobby After 5 Seconds.","bold":true,"color":"green"}
+title @a title [{"translate":"Defense Completed!","color":"gold","underlined":true}]
 data modify storage stage: Wave.Loop set value 0
 scoreboard players set @s Interval 0
 
