@@ -1,9 +1,8 @@
 effect give @s night_vision 1000000 0 true
 effect give @s saturation 1000000 0 true
-effect give @s slowness 5 3 false
-effect give @s resistance 5 6 false
-effect give @s jump_boost 5 128 false
-effect give @s weakness 5 128 false
+effect give @s slowness 10 5 false
+effect give @s resistance 10 6 false
+effect give @s jump_boost 10 128 false
 
 scoreboard players reset @s Death
 
