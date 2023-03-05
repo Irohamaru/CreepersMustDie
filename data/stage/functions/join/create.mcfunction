@@ -1,20 +1,3 @@
-execute if score @s Trigger matches 1 run function stage:data/1
-execute if score @s Trigger matches 2 run function stage:data/2
-execute if score @s Trigger matches 3 run function stage:data/3
-execute if score @s Trigger matches 4 run function stage:data/4
-execute if score @s Trigger matches 5 run function stage:data/5
-execute if score @s Trigger matches 6 run function stage:data/6
-execute if score @s Trigger matches 7 run function stage:data/7
-execute if score @s Trigger matches 8 run function stage:data/8
-execute if score @s Trigger matches 9 run function stage:data/9
-execute if score @s Trigger matches 10 run function stage:data/10
-execute if score @s Trigger matches 11 run function stage:data/11
-execute if score @s Trigger matches 12 run function stage:data/12
-execute if score @s Trigger matches 13 run function stage:data/13
-execute if score @s Trigger matches 14 run function stage:data/14
-execute if score @s Trigger matches 15 run function stage:data/15
-execute if score @s Trigger matches 16 run function stage:data/16
-execute if score @s Trigger matches 17 run function stage:data/17
-execute if score @s Trigger matches 18 run function stage:data/18
-execute if score @s Trigger matches 19 run function stage:data/19
-execute if score @s Trigger matches 20 run function stage:data/20
+function stage:join/fork
+scoreboard players operation #World Stage = @s Trigger
+execute as @a unless score @s Stage matches 1.. run function stage:join/check_hotbar
