@@ -1,10 +1,6 @@
 function main:id/search_start
 execute unless entity @e[tag=PlacingTrap,scores={ParentID=0}] run function cursor:summon
-scoreboard players set @e[tag=PlacingTrap,limit=1,distance=..0.01] ParentID 0
 
-data modify entity @e[tag=PlacingTrap,limit=1,distance=..0.01] ArmorItems[3].tag.CustomModelData set from storage item: Item.tag.CustomModelData
-execute if data storage item: Item.tag.Pose run data modify entity @e[tag=PlacingTrap,limit=1,distance=..0.01] Pose set from storage item: Item.tag.Pose
-execute unless data storage item: Item.tag.Pose run data remove entity @e[tag=PlacingTrap,limit=1,distance=..0.01] Pose
 tp @e[tag=PlacingTrap,scores={ParentID=0}] ~ ~ ~
 
 execute if score _ Emerald <= Emerald Display run team join Green @e[tag=PlacingTrap,scores={ParentID=0}]
