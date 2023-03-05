@@ -77,3 +77,4 @@ forceload add 85 50
 function trap:settings
 function achievements:data
 function achievements:chest/update
+function stage:data/lobby
