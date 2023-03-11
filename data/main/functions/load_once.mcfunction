@@ -39,6 +39,7 @@ scoreboard players set #2 _ 2
 scoreboard players set #3 _ 3
 scoreboard players set #4 _ 4
 scoreboard players set #5 _ 5
+scoreboard players set #20 _ 20
 scoreboard players set #21 _ 21
 scoreboard players set #100 _ 100
 scoreboard players set #1000000 _ 1000000
