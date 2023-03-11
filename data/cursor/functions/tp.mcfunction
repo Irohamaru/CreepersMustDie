@@ -1,4 +1,9 @@
 function main:id/search_start
+
+execute store result score # X run data get storage item: Item.tag.CustomModelData
+execute store result score # Y run data get entity @e[tag=PlacingTrap,scores={ParentID=0},limit=1] ArmorItems[3].tag.CustomModelData
+execute unless score # X = # Y run kill @e[tag=PlacingTrap,scores={ParentID=0}]
+
 execute unless entity @e[tag=PlacingTrap,scores={ParentID=0}] run function cursor:summon
 
 tp @e[tag=PlacingTrap,scores={ParentID=0}] ~ ~ ~
