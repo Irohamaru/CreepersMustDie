@@ -1,5 +1,5 @@
-effect give @s night_vision 1000000 0 true
-effect give @s saturation 1000000 0 true
+effect give @s night_vision infinite 0 true
+effect give @s saturation infinite 0 true
 effect give @s slowness 10 5 false
 effect give @s resistance 10 6 false
 effect give @s jump_boost 10 128 false
