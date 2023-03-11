@@ -1,4 +1,5 @@
 data modify storage stage: CrystalPos set value [769.0d,101.0d,256.0d]
+data modify storage stage: WaveCount set from storage data: Stage[3].Waves
 
 function trap:crystal/summon
 

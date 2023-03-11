@@ -1,6 +1,5 @@
 data modify entity @s Tags append from storage stage: Wave.System
 
-execute if entity @s[tag=NextWave] run scoreboard players add Wave Display 1
 execute if entity @s[tag=NextWave] as @a at @s run function stage:waves/system/next_wave
 execute if entity @s[tag=ShortInterval] as @a at @s run function stage:waves/system/short_interval
 execute if entity @s[tag=End] unless entity @e[tag=Enemy] run function stage:waves/system/clear
