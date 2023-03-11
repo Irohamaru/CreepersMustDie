@@ -13,4 +13,7 @@ execute if entity @s[scores={Trigger=1..}] run function player:trigger
 execute if entity @s[scores={Death=1..,Health=1..}] run function player:respawn
 scoreboard players reset @s UseCarrotStick
 
+
+execute if entity @s[gamemode=adventure,scores={Health=1..}] if block ~ ~ ~ water run function player:drowned
+
 execute positioned ^ ^ ^3 as @e[tag=Trap,nbt=!{Marker:1b},distance=..3] run data modify entity @s Marker set value 1b
