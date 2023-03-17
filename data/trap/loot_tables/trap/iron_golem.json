@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"translate\":\"Iron Golem\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}',Lore:['{\"translate\":\"Assembles an Iron Golem\",\"color\":\"white\",\"italic\":false}','{\"translate\":\"Trap\",\"color\":\"dark_purple\",\"italic\":false}','{\"translate\":\"Cost: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"300\",\"color\":\"green\"}]}','{\"translate\":\"Size: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"2*2\",\"color\":\"yellow\"}]}','{\"translate\":\"Face: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"translate\":\"Floor\",\"color\":\"light_purple\"}]}']},Cost:300,CustomModelData:110,Size:\"2*2\",Face:[Floor],Tags:[Trap,FixedTrap,IronGolem]}"
+              "tag": "{display:{Name:'{\"translate\":\"Iron Golem\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}',Lore:['{\"translate\":\"Assembles an Iron Golem\",\"color\":\"white\",\"italic\":false}','{\"translate\":\"Trap\",\"color\":\"dark_purple\",\"italic\":false}','{\"translate\":\"Cost: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"300\",\"color\":\"green\"}]}','{\"translate\":\"Size: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"2*2\",\"color\":\"yellow\"}]}','{\"translate\":\"Face: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"translate\":\"Floor\",\"color\":\"light_purple\"}]}']},Cost:300,CustomModelData:110,Size:\"2*2\",Face:[Floor],Tags:[Trap,FixedTrap,IronGolem],transformation:{scale:[2.1f,2.1f,2.1f],translation:[0f,1.05f,0f]}}"
             }
           ]
         }

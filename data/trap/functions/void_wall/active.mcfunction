@@ -6,4 +6,4 @@ execute if score @s Interval matches 1 run playsound minecraft:block.portal.ambi
 
 particle portal ^ ^ ^0.3 0.2 0.2 0.2 1 10 force
 
-execute if score @s Interval matches 50 run data modify entity @s ArmorItems[3].tag.CustomModelData set value 121
+execute if score @s Interval matches 50 run data modify entity @s item.tag.CustomModelData set value 121

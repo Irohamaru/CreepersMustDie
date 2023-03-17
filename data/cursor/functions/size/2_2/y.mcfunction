@@ -3,7 +3,7 @@ execute positioned ~0.5 ~ ~-0.5 run function cursor:check_block
 execute positioned ~-0.5 ~ ~0.5 run function cursor:check_block
 execute positioned ~-0.5 ~ ~-0.5 run function cursor:check_block
 
-execute if score #Success _ matches 4 if data storage item: Item.tag{Face:[Ceil]} positioned ~ ~-1 ~ run function cursor:tp
+execute if score #Success _ matches 4 if data storage item: Item.tag{Face:[Ceil]} positioned ~ ~-0.25 ~ run function cursor:tp
 execute if score #Success _ matches 4 unless data storage item: Item.tag{Face:[Ceil]} run function cursor:tp
 execute unless score #Success _ matches 4 run function cursor:kill
 

@@ -1,5 +1,8 @@
-data modify entity @s ArmorItems[3].tag.CustomModelData set value 11
-summon minecraft:armor_stand ~ ~-1.1 ~ {Tags:[Spikes,Trap],Team:Red,ArmorItems:[{},{},{},{id:"carrot_on_a_stick",Count:1b,tag:{CustomModelData:12}}],NoGravity:1b,Invisible:1b,Marker:1b}
+data modify entity @s item.tag.CustomModelData set value 11
+
+summon minecraft:item_display ~ ~ ~ {Tags:[Spikes,Trap],Team:Red,item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:12}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[2.1f,2.1f,2.1f],translation:[0f,-1.1f,0f]}}
+ride @e[tag=Spikes,distance=..0.01,limit=1] mount @s
+execute on passengers run tp @s ~ ~ ~ ~ ~
 function main:id/set
-execute positioned ~ ~-1.1 ~ as @e[tag=Spikes,distance=..0.01] run function main:id/link
-scoreboard players set @s Interval 70
+execute on passengers run function main:id/link
+execute on passengers run scoreboard players set @s Interval 70

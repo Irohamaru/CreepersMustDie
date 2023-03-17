@@ -1,8 +1,7 @@
 execute if entity @s[tag=!Initialized] run function player:init
 
-scoreboard players reset #Success _
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] run function cursor:tick
-execute unless score #Success _ matches 0.. run function cursor:kill
+scoreboard players add @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] HasCarrotStick 1
+execute if entity @s[scores={HasCarrotStick=1..}] run function cursor:tick
 
 execute if entity @s[scores={LeaveGame=1..}] run function player:leave_game
 execute if entity @s[scores={UseCrossbow=1..}] run function player:use_crossbow
@@ -13,7 +12,4 @@ execute if entity @s[scores={Trigger=1..}] run function player:trigger
 execute if entity @s[scores={Death=1..,Health=1..}] run function player:respawn
 scoreboard players reset @s UseCarrotStick
 
-
 execute if entity @s[gamemode=adventure,scores={Health=1..}] if block ~ ~ ~ water run function player:drowned
-
-execute positioned ^ ^ ^3 as @e[tag=Trap,nbt=!{Marker:1b},distance=..3] run data modify entity @s Marker set value 1b

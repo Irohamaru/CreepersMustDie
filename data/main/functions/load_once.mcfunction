@@ -6,6 +6,7 @@ scoreboard objectives add Death minecraft.custom:minecraft.deaths
 scoreboard objectives add Talk minecraft.custom:minecraft.talked_to_villager
 scoreboard objectives add LeaveGame minecraft.custom:minecraft.leave_game
 scoreboard objectives add Health health
+scoreboard objectives add HasCarrotStick dummy
 scoreboard objectives add ID dummy
 scoreboard objectives add ParentID dummy
 scoreboard objectives add HP dummy

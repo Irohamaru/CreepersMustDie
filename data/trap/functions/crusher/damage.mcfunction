@@ -6,4 +6,4 @@ execute positioned ^ ^ ^0.5 positioned ~-1 ~-51 ~-1 as @e[type=wandering_trader,
 
 execute if score # Crusher matches 1.. run playsound minecraft:item.armor.equip_chain master @a ~ ~ ~ 0.2 0
 scoreboard players operation @s Interval += # Crusher
-execute if score @s Interval matches 251.. run data modify entity @s ArmorItems[3].tag.CustomModelData set value 41
+execute if score @s Interval matches 251.. run data modify entity @s item.tag.CustomModelData set value 41

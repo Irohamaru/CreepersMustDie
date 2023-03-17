@@ -1,11 +1,11 @@
 execute if entity @s[tag=Crystal] run function trap:crystal/
-execute if entity @s[tag=SpikeTrap] run function trap:spike_trap/
+execute if entity @s[tag=Spikes] run function trap:spike_trap/
 execute if entity @s[tag=BrimstoneTile] run function trap:brimstone_tile/
 execute if entity @s[tag=ArrowWall] run function trap:arrow_wall/
-execute if entity @s[tag=Arrow] run function trap:arrow_wall/arrow
+execute if entity @s[tag=Arrow,type=armor_stand] run function trap:arrow_wall/arrow
 execute if entity @s[tag=SlimePool] run function trap:slime_pool/
 execute if entity @s[tag=Crusher] run function trap:crusher/
-execute if entity @s[tag=SpringTrap] run function trap:spring_trap/
+execute if entity @s[tag=Spring] run function trap:spring_trap/
 execute if entity @s[tag=Mace] run function trap:swing_mace/
 execute if entity @s[tag=Piston] run function trap:push_trap/
 execute if entity @s[tag=MasherHead] run function trap:masher/
