@@ -10,7 +10,7 @@ Action tower defense map where you defend against monsters coming through the ga
 本ワールドはゲートから押し寄せるモンスターを武器やトラップを駆使して防衛するアクションタワーディフェンスマップです。
 
 ## Version / バージョン
-Minecraft 1.18.2
+Minecraft 1.19.4
 
 ## Number of Players / プレイ人数
 Single Player    
