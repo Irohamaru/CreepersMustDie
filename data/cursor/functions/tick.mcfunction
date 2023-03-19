@@ -11,6 +11,7 @@ execute unless score _ Emerald <= Emerald Display run title @s actionbar [{"text
 function cursor:loop
 
 #終了
+execute unless score #Success _ matches 0.. run scoreboard players set @s HasCarrotStick 2
 execute if entity @s[scores={HasCarrotStick=2}] run function cursor:kill
 execute if entity @s[tag=Selling] unless data storage item: Item.tag{Sale:1b} run function cursor:sell/cancel
 
