@@ -3,7 +3,6 @@ tag @s remove PlacingTrap
 data modify entity @s Glowing set value 0b
 data modify entity @s Tags append from storage item: Item.tag.Tags[]
 team join Red @s
-function trap:init
 
 scoreboard players operation @s Emerald = _ Emerald
 scoreboard players operation Emerald Display -= _ Emerald
