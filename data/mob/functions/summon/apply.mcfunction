@@ -11,14 +11,18 @@ execute store result score @s Emerald run data get storage mob: Emerald
 scoreboard players operation @s Group = _ Group
 scoreboard players set @s Interval 0
 
-#HP,Emerald = 100+(n-1)*20 = 20n+80%
+#HP = 100+(n-1)*20 = 20n+80%
 scoreboard players set #World _ 0
-execute as @a if score #World Stage = @s Stage run scoreboard players add #World _ 1
-scoreboard players operation #World _ *= #20 _
+execute as @a[gamemode=adventure] if score #World Stage = @s Stage run scoreboard players add #World _ 20
 scoreboard players add #World _ 80
 
 scoreboard players operation @s HP *= #World _
 scoreboard players operation @s HP /= #100 _
+
+#Emerald = 100+(n-1)*10 = 10n+90% = (20n+80)/2+50%
+scoreboard players operation #World _ /= #2 _
+scoreboard players add #World _ 50
+
 scoreboard players operation @s Emerald *= #World _
 scoreboard players operation @s Emerald /= #100 _
 scoreboard players set @s StackTime 0
