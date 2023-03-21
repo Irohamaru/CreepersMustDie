@@ -5,8 +5,8 @@ data modify storage cmd: Loops set value 80
 
 execute store result score _ Emerald run data get storage item: Item.tag.Cost
 
-execute if score _ Emerald <= Emerald Display run title @s actionbar [{"text":"","color":"gold","bold":true},{"storage":"item:","nbt":"Item.tag.display.Name","interpret":true},{"text":" ("},{"storage":"item:","nbt":"Item.tag.Cost","bold":false},{"text":" "},{"translate":"Emerald"},{"text":")"}]
-execute unless score _ Emerald <= Emerald Display run title @s actionbar [{"text":"","color":"red","bold":true},{"storage":"item:","nbt":"Item.tag.display.Name","interpret":true},{"text":" ("},{"storage":"item:","nbt":"Item.tag.Cost","bold":false},{"text":" "},{"translate":"Emerald"},{"text":")"}]
+execute unless entity @s[scores={HasCarrotStick=2}] if score _ Emerald <= Emerald Display run title @s actionbar [{"text":"","color":"gold","bold":true},{"storage":"item:","nbt":"Item.tag.display.Name","interpret":true},{"text":" ("},{"storage":"item:","nbt":"Item.tag.Cost","bold":false},{"text":" "},{"translate":"Emerald"},{"text":")"}]
+execute unless entity @s[scores={HasCarrotStick=2}] unless score _ Emerald <= Emerald Display run title @s actionbar [{"text":"","color":"red","bold":true},{"storage":"item:","nbt":"Item.tag.display.Name","interpret":true},{"text":" ("},{"storage":"item:","nbt":"Item.tag.Cost","bold":false},{"text":" "},{"translate":"Emerald"},{"text":")"}]
 
 function cursor:loop
 
