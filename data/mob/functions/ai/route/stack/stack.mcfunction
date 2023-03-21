@@ -8,7 +8,7 @@ execute if score #Success _ matches 1 if entity @s[type=!creeper,scores={BeaconD
 #Interval=..0 : Interval 1~100
 #Interval=1.. : 最寄りバリケードをtarget
 
-execute if score #Success _ matches 0 if score @s Interval matches 1.. run function mob:ai/route/stack/abandon_target
-execute if score #Success _ matches 0 if score @s Interval matches ..0 run function mob:ai/route/stack/target_barricade
+execute if score #Success _ matches 0 if score @s Interval matches ..-50 run function mob:ai/route/stack/target_barricade
+execute if score #Success _ matches 0 if score @s Interval matches 0.. run function mob:ai/route/stack/abandon_target
 
 scoreboard players set @s StackTime 0
