@@ -4,12 +4,16 @@ data modify block 0 0 0 Items set from entity @s Inventory[{Slot:103b}].tag.Inve
 #スニーク中に拾ったトラップを返す
 clear @s warped_fungus_on_a_stick
 clear @s carrot_on_a_stick{Sale:1b}
-item replace entity @s armor.head with air
-item replace entity @s armor.chest with air
-item replace entity @s armor.legs with air
-item replace entity @s armor.feet with air
 data remove block 0 2 0 Items
-data modify block 0 2 0 Items set from entity @s Inventory
+data modify block 0 2 0 Items append from entity @s Inventory[{Slot:0b}]
+data modify block 0 2 0 Items append from entity @s Inventory[{Slot:1b}]
+data modify block 0 2 0 Items append from entity @s Inventory[{Slot:2b}]
+data modify block 0 2 0 Items append from entity @s Inventory[{Slot:3b}]
+data modify block 0 2 0 Items append from entity @s Inventory[{Slot:4b}]
+data modify block 0 2 0 Items append from entity @s Inventory[{Slot:5b}]
+data modify block 0 2 0 Items append from entity @s Inventory[{Slot:6b}]
+data modify block 0 2 0 Items append from entity @s Inventory[{Slot:7b}]
+data modify block 0 2 0 Items append from entity @s Inventory[{Slot:8b}]
 
 item replace entity @s hotbar.0 from block 0 0 0 container.0
 item replace entity @s hotbar.1 from block 0 0 0 container.1
