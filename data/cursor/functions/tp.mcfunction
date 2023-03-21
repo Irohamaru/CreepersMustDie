@@ -26,4 +26,4 @@ execute if entity @s[scores={UseCarrotStick=1..,Stage=1..}] if score _ Emerald <
 function main:id/search_end
 
 #Place後
-execute as @e[tag=FixedTrap,distance=..0.01] run function trap:init
+execute as @e[tag=FixedTrap,distance=..0.01] at @s run function trap:init
