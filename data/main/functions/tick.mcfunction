@@ -11,6 +11,8 @@ execute as @e[tag=Trap] at @s run function trap:tick
 
 execute as @e[tag=Mob] at @s run function mob:ai/tick
 
+execute as @e[tag=Message] at @s run function player:message
+
 execute at @e[type=arrow,nbt={inGround:0b}] as @e[tag=Trap,nbt=!{Marker:1b},distance=..5] run data modify entity @s Marker set value 1b
 
 kill @e[type=area_effect_cloud,tag=]

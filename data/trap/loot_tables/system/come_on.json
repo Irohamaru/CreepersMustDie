@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"translate\":\"Come On!\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}'},ComeOn:1b,CustomModelData:8}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

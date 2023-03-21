@@ -6,3 +6,5 @@ execute at @s run spawnpoint @s ~ ~ ~
 
 tag @s remove Joining
 scoreboard players operation @s Stage = #World Stage
+
+tag @s remove Ready
