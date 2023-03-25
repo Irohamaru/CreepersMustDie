@@ -6,3 +6,4 @@ execute if score @s UseCarrotStick matches 1.. as @e[tag=FixedTrap,tag=!FixedPoi
 
 execute if entity @s[tag=Selling] run function cursor:kill
 tag @s add Selling
+scoreboard players set #Success _ 1
