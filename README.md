@@ -13,8 +13,8 @@ Action tower defense map where you defend against monsters coming through the ga
 Minecraft 1.19.4
 
 ## Number of Players / プレイ人数
-Single Player    
-シングルプレイヤー
+Single Player / Multiplayer   
+シングルプレイヤー / マルチプレイヤー
 
 ## Language / 言語
 English    
