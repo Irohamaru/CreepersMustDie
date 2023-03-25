@@ -13,4 +13,4 @@ item replace entity @s container.8 from block 0 0 0 container.8
 execute if data entity @s Inventory[{id:"minecraft:crossbow",tag:{ChargedProjectiles:[]}}] run give @s arrow
 
 execute if data entity @s {Inventory:[]} run tellraw @s [{"text":""},{"selector":"@s","color":"yellow"},{"text":": "},{"translate":"Defending without items is too reckless."}]
-execute unless data entity @s {Inventory:[]} run function stage:join/join
+execute unless data entity @s {Inventory:[]}
