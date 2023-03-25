@@ -10,7 +10,7 @@ item replace entity @s container.6 from block 0 0 0 container.6
 item replace entity @s container.7 from block 0 0 0 container.7
 item replace entity @s container.8 from block 0 0 0 container.8
 
-execute if data entity @s Inventory[{id:"minecraft:crossbow",tag:{ChargedProjectiles:[]}}] run give @s arrow
+execute if data entity @s Inventory[{id:"minecraft:crossbow",tag:{ChargedProjectiles:[]}}] unless data entity @s Inventory[{id:"minecraft:arrow"}] run give @s arrow
 
 execute if data entity @s {Inventory:[]} run tellraw @s [{"text":""},{"selector":"@s","color":"yellow"},{"text":": "},{"translate":"Defending without items is too reckless."}]
 execute unless data entity @s {Inventory:[]}
