@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"translate\":\"TNT\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}',Lore:['{\"translate\":\"Blows up Enemies With a Spring\",\"color\":\"white\",\"italic\":false}','{\"translate\":\"%s to Rotate\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"keybind\":\"key.use\",\"color\":\"light_purple\",\"bold\":true,\"italic\":false}]}','{\"translate\":\"Trap\",\"color\":\"dark_purple\",\"italic\":false}','{\"translate\":\"Cost: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"80\",\"color\":\"green\"}]}','{\"translate\":\"Size: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"1*1\",\"color\":\"yellow\"}]}','{\"translate\":\"Face: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"translate\":\"Floor\",\"color\":\"light_purple\"}]}']},Cost:80,CustomModelData:130,Size:\"1*1\",Face:[Floor],Tags:[Trap,FixedTrap,TNT,Parent],transformation:{translation:[0f,0.5f,0f]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

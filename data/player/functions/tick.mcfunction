@@ -1,7 +1,9 @@
 execute if entity @s[tag=!Initialized] run function player:init
 
-scoreboard players add @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] HasCarrotStick 1
+scoreboard players add @s[tag=!HoldTNT,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] HasCarrotStick 1
 execute if entity @s[scores={HasCarrotStick=1..}] run function cursor:tick
+
+execute if entity @s[tag=HoldTNT] run function trap:tnt/hold
 
 execute if entity @s[scores={LeaveGame=1..}] run function player:leave_game
 execute if entity @s[scores={UseCrossbow=1..}] run function player:use_crossbow
