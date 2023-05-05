@@ -14,4 +14,6 @@ execute if entity @s[scores={Trigger=1..}] run function player:trigger
 execute if entity @s[scores={Death=1..,Health=1..}] run function player:respawn
 scoreboard players reset @s UseCarrotStick
 
-execute if entity @s[gamemode=adventure,scores={Health=1..}] if block ~ ~ ~ water run function player:drowned
+execute if block ~ ~ ~ water if entity @s[gamemode=adventure,scores={Health=1..}] run damage @s 6 minecraft:drown
+execute if block ~ ~ ~ pointed_dripstone if entity @s[gamemode=adventure,scores={Health=1..}] run damage @s 100 minecraft:stalagmite
+execute if block ~ ~-1 ~ pointed_dripstone if entity @s[gamemode=adventure,scores={Health=1..},nbt={OnGround:1b}] run damage @s 100 minecraft:stalagmite
