@@ -30,4 +30,4 @@ scoreboard players set @s StackTime 0
 execute positioned ~ ~-50 ~ run function mob:summon/data/wandering_villager
 function main:id/set
 execute positioned ~ ~-50 ~ as @e[type=wandering_trader,distance=0] run function main:id/link
-execute positioned ~ ~-50 ~ as @e[type=wandering_trader,distance=0] run scoreboard players operation @s Group = _ Group
+execute positioned ~ ~-50 ~ store result score @e[type=wandering_trader,distance=0] Group run data get storage stage: Enemy.Group

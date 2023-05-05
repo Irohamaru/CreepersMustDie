@@ -1,1 +1,1 @@
-scoreboard players set @e[tag=Portal] Interval 1000000
+scoreboard players set @e[tag=Crystal] Interval 1000000

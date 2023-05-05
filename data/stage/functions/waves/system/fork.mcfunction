@@ -6,4 +6,4 @@ execute if entity @s[tag=End] unless entity @e[tag=Enemy] run function stage:wav
 execute if entity @s[tag=Message] run function stage:waves/system/message
 execute if entity @s[tag=BackToLobby] run function stage:leave/close
 
-data modify entity @s Tags set value [Portal]
+data modify entity @s Tags set value [Trap,Crystal]
