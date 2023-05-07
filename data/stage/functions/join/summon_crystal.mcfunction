@@ -7,7 +7,7 @@ bossbar set crystal visible true
 bossbar set crystal value 20
 scoreboard players set Wave Display 0
 
-summon armor_stand ~ ~ ~ {Tags:[Trap,Crystal]}
+summon armor_stand ~ ~ ~ {Tags:[Trap,Crystal],Invisible:1b,Marker:1b,Invulnerable:1b}
 scoreboard players set @e[tag=Crystal,distance=..0.01] MaxHP 20
 scoreboard players set @e[tag=Crystal,distance=..0.01] HP 20
 
