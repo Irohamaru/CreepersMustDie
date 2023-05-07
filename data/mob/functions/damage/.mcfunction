@@ -19,6 +19,4 @@ execute if data storage mob: Damage.Falling run data modify entity @s FallDistan
 effect give @s instant_damage 1 127 true
 effect give @s instant_health 1 127 true
 
-function main:id/search_start
-execute positioned ~ ~-50 ~ run scoreboard players set @e[type=wandering_trader,scores={ParentID=0},distance=..8] Interval 50
-function main:id/search_end
+execute on passengers on origin run scoreboard players set @s Interval 50
