@@ -1,6 +1,1 @@
-execute unless score @s Interval matches 0.. run function trap:tnt/ignite
-
-scoreboard players remove @s Interval 1
-execute if score @s Interval matches ..0 run function trap:tnt/explode
-
-particle smoke ~ ~1 ~ 0.1 0.2 0.1 0.02 1
+execute positioned ^ ^ ^0.01 facing entity @e[type=silverfish,tag=TNT,distance=0.011..1,limit=1,sort=nearest] feet facing ^ ^ ^-1 run function trap:tnt/push
