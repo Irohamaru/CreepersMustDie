@@ -7,3 +7,4 @@ execute if entity @s[tag=Masher] run function trap:masher/init
 execute if entity @s[tag=IronGolem] run function trap:iron_golem/init
 execute if entity @s[tag=VoidWall] run function trap:void_wall/init
 execute if entity @s[tag=TNT] run function trap:tnt/init
+execute if entity @s[tag=TNTDispenser] run function trap:tnt_dispenser/init
