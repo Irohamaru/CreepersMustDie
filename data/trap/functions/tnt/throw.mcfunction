@@ -1,3 +1,5 @@
+execute at @s run tp @s ~ ~0.5 ~
+
 execute positioned 0.0 0.0 0.0 as 0-0-0-0-0 run tp @s ^ ^ ^1
 data modify entity @s Motion set from entity 0-0-0-0-0 Pos
 
