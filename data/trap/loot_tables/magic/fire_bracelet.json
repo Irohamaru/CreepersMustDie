@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"translate\":\"Fire Bracelet\",\"color\":\"green\",\"bold\":true,\"italic\":false}'},CustomModelData:0,Magic:1b,FireBracelet:1b,MP:25,Cooldown:20}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

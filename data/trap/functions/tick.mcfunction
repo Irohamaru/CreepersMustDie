@@ -14,3 +14,5 @@ execute if entity @s[tag=VoidWall] run function trap:void_wall/
 execute if entity @s[type=slime,tag=TNT,nbt=!{AbsorptionAmount:1000000f}] on vehicle run function trap:tnt/tick_ignited
 execute if entity @s[type=silverfish,tag=TNT] run function trap:tnt/tick
 execute if entity @s[tag=TNTDispenser] run function trap:tnt_dispenser/
+
+execute if entity @s[tag=Fireball] run function trap:fireball/tick
