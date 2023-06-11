@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"translate\":\"Skip to Wave 1\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}'},CustomModelData:9,System:1b,SkipToWave1:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

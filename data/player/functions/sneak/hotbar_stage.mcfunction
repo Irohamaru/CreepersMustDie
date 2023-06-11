@@ -1,5 +1,6 @@
 loot replace entity @s hotbar.0 loot trap:system/sale
-item replace entity @s hotbar.1 with air
+execute unless score Wave Display matches 0 run item replace entity @s hotbar.1 with air
+execute if score Wave Display matches 0 run loot replace entity @s hotbar.1 loot trap:system/skip_to_wave1
 loot replace entity @s hotbar.2 loot trap:system/skip
 item replace entity @s hotbar.3 with air
 loot replace entity @s hotbar.4 loot trap:system/nice
