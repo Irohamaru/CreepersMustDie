@@ -9,7 +9,5 @@ execute as @e[tag=Trap] at @s run function trap:tick
 
 execute as @e[tag=Mob] at @s run function mob:ai/tick
 
-execute as @e[tag=Message] at @s run function player:message
-
 kill @e[type=area_effect_cloud,tag=]
 kill @e[type=experience_orb]

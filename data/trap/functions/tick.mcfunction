@@ -16,3 +16,5 @@ execute if entity @s[type=silverfish,tag=TNT] run function trap:tnt/tick
 execute if entity @s[tag=TNTDispenser] run function trap:tnt_dispenser/
 
 execute if entity @s[tag=Fireball] run function trap:fireball/tick
+
+execute if entity @s[tag=Message] run function trap:message
