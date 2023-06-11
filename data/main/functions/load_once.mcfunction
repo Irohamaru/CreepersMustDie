@@ -11,6 +11,10 @@ scoreboard objectives add ID dummy
 scoreboard objectives add ParentID dummy
 scoreboard objectives add HP dummy
 scoreboard objectives add MaxHP dummy
+scoreboard objectives add MP dummy
+scoreboard objectives add MaxMP dummy
+scoreboard objectives add MPRegen dummy
+scoreboard objectives add Cooldown dummy
 scoreboard objectives add FollowRange dummy
 scoreboard objectives add KnockbackMultiplier dummy
 scoreboard objectives add BeaconDamage dummy

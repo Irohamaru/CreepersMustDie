@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"translate\":\"Come On!\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}'},ComeOn:1b,CustomModelData:8}"
+              "tag": "{display:{Name:'{\"translate\":\"Come On!\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}'},CustomModelData:8,System:1b,ComeOn:1b}"
             }
           ]
         }

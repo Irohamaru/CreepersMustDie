@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"translate\":\"I\\'m Ready!\",\"color\":\"green\",\"bold\":true,\"italic\":false}'},Ready:1b,CustomModelData:5}"
+              "tag": "{display:{Name:'{\"translate\":\"I\\'m Ready!\",\"color\":\"green\",\"bold\":true,\"italic\":false}'},CustomModelData:5,System:1b,Ready:1b}"
             }
           ]
         }

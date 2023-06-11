@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"translate\":\"Wait a Minute!\",\"color\":\"red\",\"bold\":true,\"italic\":false}'},Wait:1b,CustomModelData:6}"
+              "tag": "{display:{Name:'{\"translate\":\"Wait a Minute!\",\"color\":\"red\",\"bold\":true,\"italic\":false}'},CustomModelData:6,System:1b,Wait:1b}"
             }
           ]
         }

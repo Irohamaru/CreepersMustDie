@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"translate\":\"Skip (Start Next Wave)\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}'},Skip:1b,CustomModelData:1}"
+              "tag": "{display:{Name:'{\"translate\":\"Skip (Start Next Wave)\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}'},CustomModelData:1,System:1b,Skip:1b}"
             }
           ]
         }

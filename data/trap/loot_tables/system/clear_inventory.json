@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"translate\":\"Clear Inventory\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}'},CustomModelData:4,ClearInventory:1b,Enchantments:[{}]}"
+              "tag": "{display:{Name:'{\"translate\":\"Clear Inventory\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}'},CustomModelData:4,System:1b,ClearInventory:1b,Enchantments:[{}]}"
             }
           ]
         }

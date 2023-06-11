@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"translate\":\"Join Ongoing Stage\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}'},CustomModelData:3,JoinOngoingStage:1b,Enchantments:[{}]}"
+              "tag": "{display:{Name:'{\"translate\":\"Join Ongoing Stage\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}'},CustomModelData:3,System:1b,JoinOngoingStage:1b,Enchantments:[{}]}"
             }
           ]
         }

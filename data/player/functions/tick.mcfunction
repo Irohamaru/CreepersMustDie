@@ -5,6 +5,8 @@ execute if entity @s[scores={HasCarrotStick=1..}] run function cursor:tick
 
 execute if entity @s[tag=HoldTNT] run function trap:tnt/hold
 
+execute if score @s MP < @s MaxMP run function player:mp/
+execute if entity @s[scores={Cooldown=1..}] run function player:cooldown
 execute if entity @s[scores={LeaveGame=1..}] run function player:leave_game
 execute if entity @s[scores={UseCrossbow=1..}] run function player:use_crossbow
 execute if entity @s[scores={UseWarpedFungus=1..}] run function player:use_warped_fungus/
