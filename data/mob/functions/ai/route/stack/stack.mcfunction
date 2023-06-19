@@ -5,5 +5,3 @@ execute if score # _ matches 1 if score @s Interval matches ..0 if data storage 
 execute if score #Success _ matches 0 if entity @s[tag=RouteGuide] run function mob:ai/enemy/kill
 execute if score # _ matches 1 if score #Success _ matches 0 run function mob:ai/route/stack/near_barricade/
 execute if score # _ matches 0 run function mob:ai/route/stack/no_barricade/
-
-scoreboard players set @s StackTime 0

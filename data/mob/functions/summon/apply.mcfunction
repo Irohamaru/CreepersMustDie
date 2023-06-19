@@ -25,7 +25,7 @@ scoreboard players add #World _ 50
 
 scoreboard players operation @s Emerald *= #World _
 scoreboard players operation @s Emerald /= #100 _
-scoreboard players set @s StackTime 0
+function mob:ai/route/stack/reset
 
 execute positioned ~ ~-50 ~ run function mob:summon/data/wandering_villager
 function main:id/set

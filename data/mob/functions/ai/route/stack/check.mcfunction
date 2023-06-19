@@ -5,3 +5,5 @@ execute if score @s X = # X if score @s Z = # Z run function mob:ai/route/stack/
 
 scoreboard players operation @s X = # X
 scoreboard players operation @s Z = # Z
+
+function mob:ai/route/stack/reset
