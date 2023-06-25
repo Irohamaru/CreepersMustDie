@@ -1,5 +1,5 @@
-data modify block 2 2 2 Text1 set value '{"translate":"Chest  *Only Hotbar is Brought in"}'
-data modify block 3 2 2 CustomName set from block 2 2 2 Text1
+data modify block 2 2 2 front_text.messages[0] set value '{"translate":"Chest  *Only Hotbar is Brought in"}'
+data modify block 3 2 2 CustomName set from block 2 2 2 front_text.messages[0]
 
 data remove block 3 2 2 Items
 data remove block 3 2 3 Items

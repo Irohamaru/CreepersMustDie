@@ -14,10 +14,10 @@ data modify storage achievements: TempAchievements set from storage achievements
 data modify storage achievements: Stage set from storage data: Stage
 data modify storage achievements: pages set value []
 
-data modify block 2 2 2 Text1 set value '["",{"translate":"Stage Select"},{"text":" "},{"storage":"data:","nbt":"Icon.Clear","interpret":true},{"storage":"achievements:","nbt":"ClearCount","color":"light_purple"},{"text":" "},{"storage":"data:","nbt":"Icon.Flawless","interpret":true},{"storage":"achievements:","nbt":"FlawlessCount","color":"blue"},{"text":"\\n"}]'
+data modify block 2 2 2 front_text.messages[0] set value '["",{"translate":"Stage Select"},{"text":" "},{"storage":"data:","nbt":"Icon.Clear","interpret":true},{"storage":"achievements:","nbt":"ClearCount","color":"light_purple"},{"text":" "},{"storage":"data:","nbt":"Icon.Flawless","interpret":true},{"storage":"achievements:","nbt":"FlawlessCount","color":"blue"},{"text":"\\n"}]'
 
 function achievements:stage_book/loop
 
-data modify storage achievements: pages prepend from block 2 2 2 Text1
+data modify storage achievements: pages prepend from block 2 2 2 front_text.messages[0]
 data modify block 85 102 49 Book.tag.pages set from storage achievements: pages
 data modify block 85 102 49 Page set value 0

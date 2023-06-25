@@ -48,6 +48,6 @@ summon minecraft:area_effect_cloud 85.50 102.65 49.50 {CustomName:'[{"text":"<"}
 summon minecraft:area_effect_cloud 85.50 102.35 52.00 {CustomName:'[{"text":"<"},{"translate":"container.chest"},{"text":">"}]',CustomNameVisible:1b,Tags:[Lobby],Duration:2147483647}
 summon minecraft:area_effect_cloud 85.50 102.65 54.50 {CustomName:'[{"text":"<"},{"translate":"How to Play"},{"text":">"}]',CustomNameVisible:1b,Tags:[Lobby],Duration:2147483647}
 
-data modify block 2 2 2 Text1 set value '["",{"translate":"How to Play","color":"#1D7546","bold":true},{"text":"\\n\\n"},{"keybind":"key.use","color":"light_purple","bold":true},{"text":" : \\n "},{"translate":"Use Item / Set Trap"},{"text":"\\n\\n"},{"keybind":"key.sneak","color":"light_purple","bold":true},{"text":" : \\n "},{"translate":"Open Shift Menu"},{"text":"\\n\\n"},{"keybind":"key.swapOffhand","color":"light_purple","bold":true},{"text":" : \\n "},{"translate":"Rotate Placing Trap"}]'
+data modify block 2 2 2 front_text.messages[0] set value '["",{"translate":"How to Play","color":"#1D7546","bold":true},{"text":"\\n\\n"},{"keybind":"key.use","color":"light_purple","bold":true},{"text":" : \\n "},{"translate":"Use Item / Set Trap"},{"text":"\\n\\n"},{"keybind":"key.sneak","color":"light_purple","bold":true},{"text":" : \\n "},{"translate":"Open Shift Menu"},{"text":"\\n\\n"},{"keybind":"key.swapOffhand","color":"light_purple","bold":true},{"text":" : \\n "},{"translate":"Rotate Placing Trap"}]'
 data modify block 85 102 54 Book.tag.pages set value []
-data modify block 85 102 54 Book.tag.pages append from block 2 2 2 Text1
+data modify block 85 102 54 Book.tag.pages append from block 2 2 2 front_text.messages[0]
