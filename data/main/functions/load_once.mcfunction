@@ -51,6 +51,7 @@ scoreboard players set #100 _ 100
 scoreboard players set #1000000 _ 1000000
 
 summon marker 0.0 0.0 0.0 {UUID:[I;0,0,0,0],NoGravity:1b,Invulnerable:1b}
+summon snowball 0.0 0.0 0.0 {Tags:[KeepProjectile],UUID:[I;0,0,0,1],NoGravity:1b}
 
 team add Enemy
 team add Friendly

@@ -8,6 +8,8 @@ scoreboard players operation _ HP += _ _
 
 scoreboard players operation @s HP -= _ HP
 
+data modify entity 0-0-0-0-1 Owner set from entity @s ArmorItems[3].tag.Owner
+
 function mob:ai/route/stack/reset
 scoreboard players add @s[scores={Interval=..-30}] Interval 30
 
@@ -19,4 +21,4 @@ execute if data storage mob: Damage.Falling run data modify entity @s FallDistan
 effect give @s instant_damage 1 127 true
 effect give @s instant_health 1 127 true
 
-execute on passengers on origin run scoreboard players set @s Interval 50
+execute as 0-0-0-0-1 on origin run scoreboard players set @s Interval 50

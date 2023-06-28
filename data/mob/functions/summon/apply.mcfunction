@@ -31,6 +31,4 @@ execute positioned ~ ~-50 ~ run function mob:summon/data/wandering_villager
 function main:id/set
 execute positioned ~ ~-50 ~ store result score @e[type=wandering_trader,distance=0] Group run data get storage stage: Enemy.Group
 
-summon area_effect_cloud ~ ~ ~ {Tags:[LinkAEC],Duration:2147483647}
-ride @e[tag=LinkAEC,distance=..0.01,limit=1] mount @s
-execute positioned ~ ~-50 ~ on passengers run data modify entity @s Owner set from entity @e[type=wandering_trader,distance=0,limit=1] UUID
+execute positioned ~ ~-50 ~ run data modify entity @s ArmorItems[3].tag.Owner set from entity @e[type=wandering_trader,distance=0,limit=1] UUID
