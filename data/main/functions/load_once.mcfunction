@@ -39,7 +39,7 @@ scoreboard objectives add Masher dummy
 scoreboard objectives add Stun dummy
 
 scoreboard objectives setdisplay sidebar Display
-scoreboard objectives setdisplay belowName Health
+scoreboard objectives setdisplay below_name Health
 
 scoreboard players set #2 _ 2
 scoreboard players set #3 _ 3
