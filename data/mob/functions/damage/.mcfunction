@@ -14,7 +14,7 @@ function mob:ai/route/stack/reset
 scoreboard players add @s[scores={Interval=..-30}] Interval 30
 
 execute if data storage mob: Damage.Stun run function mob:damage/stun
-execute if data storage mob: Damage.Motion run function mob:damage/motion
+execute if data storage mob: Damage.Motion if function mob:damage/motion_init run function mob:damage/motion with storage mob: Damage
 execute if data storage mob: Damage.Falling run data modify entity @s FallDistance set from storage mob: Damage.Falling
 
 #ダメージ演出
