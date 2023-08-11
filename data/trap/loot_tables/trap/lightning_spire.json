@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"translate\":\"Lightning Spire\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}',Lore:['{\"translate\":\"Generates Electric Shocks Between Lightning Spires\",\"color\":\"white\",\"italic\":false}','{\"translate\":\"in Front of Each Other Within 6 Blocks.\",\"color\":\"white\",\"italic\":false}','{\"translate\":\"Trap\",\"color\":\"dark_purple\",\"italic\":false}','{\"translate\":\"Cost: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"125\",\"color\":\"green\"}]}','{\"translate\":\"Size: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"2*2\",\"color\":\"yellow\"}]}','{\"translate\":\"Face: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"translate\":\"Floor\",\"color\":\"light_purple\"}]}']},Cost:125,CustomModelData:150,Size:\"2*2\",Face:[Floor],Tags:[Trap,FixedTrap,LightningSpire,Parent],transformation:{scale:[2.1f,2.1f,2.1f],translation:[0f,1.05f,0f]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

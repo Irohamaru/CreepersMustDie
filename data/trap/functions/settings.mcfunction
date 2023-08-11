@@ -9,5 +9,7 @@ data modify storage trap: Masher set value {Physical:12,Stun:40}
 data modify storage trap: VoidWall set value {Physical:150,Motion:4}
 data modify storage trap: TNT set value {Physical:100}
 data modify storage trap: IronGolemHeavyAttack set value {Motion:0.5}
+data modify storage trap: LightningSpire set value {Lightning:5}
+data modify storage trap: LightningSpireImpact set value {Lightning:50,Stun:40,Motion:0.6}
 
 data modify storage trap: Fireball set value {Fire:80,Stun:50,Motion:1.2}

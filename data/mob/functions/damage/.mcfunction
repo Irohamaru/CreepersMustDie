@@ -6,6 +6,9 @@ scoreboard players operation _ HP += _ _
 execute store result score _ _ run data get storage mob: Damage.Fire
 scoreboard players operation _ HP += _ _
 
+execute store result score _ _ run data get storage mob: Damage.Lightning
+scoreboard players operation _ HP += _ _
+
 scoreboard players operation @s HP -= _ HP
 
 data modify entity 0-0-0-0-1 Owner set from entity @s ArmorItems[3].tag.Owner
