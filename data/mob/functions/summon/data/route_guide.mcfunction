@@ -1,4 +1,4 @@
-summon minecraft:silverfish ~ ~ ~ {Tags:[Mob,RouteAI,Unique,RouteGuide,SilentDeath],Silent:1b,Team:Friendly,ActiveEffects:[{Id:14,Amplifier:0b,Duration:1000000,ShowParticles:false}]}
+summon minecraft:silverfish ~ ~ ~ {Tags:[Mob,RouteAI,Unique,RouteGuide,SilentDeath],Silent:1b,Team:Friendly,active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:1000000,show_particles:false}]}
 
 data modify storage mob: HP set value 100
 data modify storage mob: FollowRange set value 0d
