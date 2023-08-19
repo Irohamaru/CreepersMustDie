@@ -5,4 +5,4 @@ particle dust 0 2 100000000 1.5 ~ ~3 ~ 0.2 1.5 0.2 1 30 force
 particle end_rod ~ ~2 ~ 0 0 0 0.12 10 force
 
 data modify storage mob: Damage set from storage trap: LightningSpireImpact
-execute positioned ~-1 ~ ~-1 as @e[tag=Enemy,dx=1,dy=1,dz=1] positioned ~1 ~-0.3 ~1 facing entity @s feet run function mob:damage/
+execute as @e[tag=Enemy,distance=..2] facing entity @s feet run function mob:damage/
