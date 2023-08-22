@@ -4,3 +4,5 @@ execute if entity @s[scores={Interval=400..}] positioned ^ ^ ^1 if entity @e[tag
 
 execute if entity @s[nbt=!{AbsorptionAmount:2048f}] run function trap:iron_golem/damaged
 
+#regeneration用に1秒ごとにEmeraldを更新
+execute if score #World Interval matches 1 store result score @s Emerald run data get entity @s Health 3

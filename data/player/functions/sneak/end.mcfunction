@@ -26,3 +26,5 @@ item replace entity @s hotbar.7 from block 0 0 0 container.7
 item replace entity @s hotbar.8 from block 0 0 0 container.8
 
 loot give @s mine 0 2 0 minecraft:debug_stick
+
+title @s actionbar {"text":""}
