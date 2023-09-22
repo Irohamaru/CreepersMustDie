@@ -15,6 +15,8 @@ execute if entity @s[type=slime,tag=TNT,nbt=!{AbsorptionAmount:1000000f}] on veh
 execute if entity @s[type=silverfish,tag=TNT] run function trap:tnt/tick
 execute if entity @s[tag=TNTDispenser] run function trap:tnt_dispenser/
 execute if entity @s[tag=LightningSpire] run function trap:lightning_spire/
+execute if entity @s[tag=AutoBallista,tag=AB.Table] run function trap:auto_ballista/
+execute if entity @s[tag=AB.ShootedArrow,type=armor_stand] run function trap:auto_ballista/arrow
 
 execute if entity @s[tag=Fireball] run function trap:fireball/tick
 
