@@ -3,6 +3,8 @@
   "values": [
     "minecraft:water",
     "minecraft:lava",
-    "minecraft:pointed_dripstone"
+    "minecraft:pointed_dripstone",
+    "fire",
+    "soul_fire"
   ]
 }

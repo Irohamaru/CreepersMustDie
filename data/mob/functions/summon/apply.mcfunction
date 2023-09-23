@@ -4,6 +4,7 @@ data modify entity @s Attributes[{Name:"minecraft:generic.attack_damage"}].Base 
 data modify entity @s Attributes[{Name:"minecraft:generic.knockback_resistance"}].Base set from storage mob: KnockbackResistance
 attribute @s generic.max_absorption base set 2048
 data merge entity @s {ArmorItems:[{},{},{},{id:"stone_button",Count:1b}],ArmorDropChances:[0f,0f,0f,0f],AbsorptionAmount:2048f,DeathLootTable:"minecraft:empty",DeathTime:10s}
+effect give @s fire_resistance infinite 0 true
 execute store result score @s HP store result score @s MaxHP run data get storage mob: HP
 execute store result score @s BeaconDamage run data get storage mob: BeaconDamage
 execute store result score @s FollowRange run data get storage mob: FollowRange
