@@ -4,7 +4,7 @@ execute as @e[tag=FixedTrap,tag=!FixedPoint,distance=..2,limit=1,sort=nearest] s
 
 particle angry_villager ^ ^ ^-0.2
 
-execute if score @s UseCarrotStick matches 1.. as @e[tag=FixedTrap,tag=!FixedPoint,distance=..2,limit=1,sort=nearest] at @s run function cursor:sell/sell
+execute if score @s UseCarrotStick matches 1.. as @e[tag=FixedTrap,tag=!FixedPoint,distance=..2,limit=1,sort=nearest] at @s[tag=!InitialPlace] run function cursor:sell/sell
 
 execute if entity @s[tag=Selling] run function cursor:kill
 tag @s add Selling

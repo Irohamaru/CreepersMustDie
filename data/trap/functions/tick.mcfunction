@@ -1,3 +1,4 @@
+execute if entity @s[tag=InitialPlace] run function trap:initial_place/init
 execute if entity @s[tag=Crystal] run function trap:crystal/
 execute if entity @s[tag=Spikes] run function trap:spike_trap/
 execute if entity @s[tag=BrimstoneTile] run function trap:brimstone_tile/

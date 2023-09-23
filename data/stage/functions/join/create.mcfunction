@@ -1,3 +1,4 @@
+function stage:join/reset
 function stage:join/fork
 execute positioned 2 2 2 run function stage:join/summon_crystal
 scoreboard players operation #World Stage = @s Trigger
