@@ -1,6 +1,6 @@
 scoreboard players remove @s Interval 1
 execute if score @s Interval matches ..-2 run function mob:ai/wandering_trader/lost_parent
-execute unless data entity @s WanderTarget run function mob:ai/wandering_trader/pathfinding/init
+execute unless data entity @s wander_target run function mob:ai/wandering_trader/pathfinding/init
 
 function mob:ai/effect/
 
