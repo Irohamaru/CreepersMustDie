@@ -9,4 +9,3 @@ attribute @e[tag=IronGolem,distance=0,limit=1] generic.max_absorption base set 2
 data merge entity @e[tag=IronGolem,distance=0,limit=1] {Team:"Friendly",DeathLootTable:"minecraft:empty",Health:100f,AbsorptionAmount:2048f,PlayerCreated:1b,active_effects:[{id:"minecraft:regeneration",amplifier:1b,duration:2100000000,show_particles:0b}],Attributes:[{Name:"minecraft:generic.max_health",Base:100},{Name:"minecraft:generic.follow_range",Base:6},{Name:"minecraft:generic.movement_speed",Base:0.1},{Name:"minecraft:generic.attack_damage",Base:50}]}
 scoreboard players operation @e[tag=IronGolem,distance=0,limit=1] Emerald = @s Emerald
 data modify entity @e[tag=IronGolem,distance=0,limit=1] Tags append from entity @s Tags[]
-execute if entity @s[tag=InitialPlace] run team join Gold @e[tag=IronGolem,distance=0,limit=1]
