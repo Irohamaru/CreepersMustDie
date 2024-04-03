@@ -8,8 +8,16 @@
           "name": "minecraft:warped_fungus_on_a_stick",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"translate\":\"Join Ongoing Stage\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}'},CustomModelData:3,System:1b,JoinOngoingStage:1b,Enchantments:[{}]}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{System:1b,JoinOngoingStage:1b}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "{\"translate\":\"Join Ongoing Stage\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}",
+                "minecraft:custom_model_data": 3,
+                "minecraft:enchantment_glint_override": true
+              }
             }
           ]
         }

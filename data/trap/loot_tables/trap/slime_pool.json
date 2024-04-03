@@ -8,8 +8,22 @@
           "name": "minecraft:carrot_on_a_stick",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"translate\":\"Slime Pool\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}',Lore:['{\"translate\":\"Slime Slows Down Movement Speed of Enemies\",\"color\":\"white\",\"italic\":false}','{\"translate\":\"Trap\",\"color\":\"dark_purple\",\"italic\":false}','{\"translate\":\"Cost: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"80\",\"color\":\"green\"}]}','{\"translate\":\"Size: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"2*2\",\"color\":\"yellow\"}]}','{\"translate\":\"Face: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"translate\":\"Floor\",\"color\":\"light_purple\"}]}']},Cost:80,CustomModelData:60,Size:\"2*2\",Face:[Floor],Tags:[Trap,FixedTrap,SlimePool],transformation:{scale:[2.1f,2.1f,2.1f],translation:[0f,1.05f,0f]}}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{Cost:80,Size:\"2*2\",Face:[Floor],Tags:[Trap,FixedTrap,SlimePool],transformation:{scale:[2.1f,2.1f,2.1f],translation:[0f,1.05f,0f]}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "{\"translate\":\"Slime Pool\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}",
+                "minecraft:lore": [
+                  "{\"translate\":\"Slime Slows Down Movement Speed of Enemies\",\"color\":\"white\",\"italic\":false}",
+                  "{\"translate\":\"Trap\",\"color\":\"dark_purple\",\"italic\":false}",
+                  "{\"translate\":\"Cost: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"80\",\"color\":\"green\"}]}",
+                  "{\"translate\":\"Size: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"2*2\",\"color\":\"yellow\"}]}",
+                  "{\"translate\":\"Face: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"translate\":\"Floor\",\"color\":\"light_purple\"}]}"
+                ],
+                "minecraft:custom_model_data": 60
+              }
             }
           ]
         }

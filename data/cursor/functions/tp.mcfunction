@@ -8,8 +8,8 @@ function main:id/search_start
 tp @e[tag=PlacingTrap,scores={ParentID=0}] ~ ~ ~
 
 #CMD不一致のときkill
-execute store result score # X run data get storage item: Item.tag.CustomModelData
-execute store result score # Y run data get entity @e[type=item_display,tag=PlacingTrap,scores={ParentID=0},distance=..0.01,limit=1] item.tag.CustomModelData
+execute store result score # X run data get storage item: Item.components.minecraft:custom_model_data
+execute store result score # Y run data get entity @e[type=item_display,tag=PlacingTrap,scores={ParentID=0},distance=..0.01,limit=1] item.components.minecraft:custom_model_data
 execute unless score # X = # Y run kill @e[tag=PlacingTrap,scores={ParentID=0},distance=..0.01]
 
 #向き不一致のときkill

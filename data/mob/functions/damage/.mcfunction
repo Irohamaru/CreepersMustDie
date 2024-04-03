@@ -11,7 +11,7 @@ scoreboard players operation _ HP += _ _
 
 scoreboard players operation @s HP -= _ HP
 
-data modify entity 0-0-0-0-1 Owner set from entity @s ArmorItems[3].tag.Owner
+data modify entity 0-0-0-0-1 Owner set from entity @s ArmorItems[3].components.minecraft:custom_data.Owner
 
 function mob:ai/route/stack/reset
 scoreboard players add @s[scores={Interval=..-30}] Interval 30

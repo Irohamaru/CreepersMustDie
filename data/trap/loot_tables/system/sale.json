@@ -8,8 +8,15 @@
           "name": "minecraft:carrot_on_a_stick",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"translate\":\"Sale\",\"color\":\"red\",\"bold\":true,\"italic\":false}'},CustomModelData:10000,Face:[Floor,Wall,Ceil],Sale:1b}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{Face:[Floor,Wall,Ceil],Sale:1b}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "{\"translate\":\"Sale\",\"color\":\"red\",\"bold\":true,\"italic\":false}",
+                "minecraft:custom_model_data": 10000
+              }
             }
           ]
         }

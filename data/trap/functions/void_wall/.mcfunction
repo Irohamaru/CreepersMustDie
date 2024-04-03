@@ -3,7 +3,7 @@ execute unless score @s Interval matches 1.. positioned ^ ^ ^1 positioned ~-1 ~-
 execute if score @s Interval matches 1..50 run function trap:void_wall/active
 execute if score @s Interval matches 1.. run scoreboard players add @s Interval 1
 
-execute if score @s Interval matches 6000.. run data modify entity @s item.tag.CustomModelData set value 120
+execute if score @s Interval matches 6000.. run data modify entity @s item.components.minecraft:custom_model_data set value 120
 execute if score @s Interval matches 6000.. run scoreboard players set @s Interval 0
 
 execute unless score @s Interval matches 51.. run particle portal ^ ^ ^0.3 0.2 0.2 0.2 1 2 force

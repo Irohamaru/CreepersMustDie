@@ -8,8 +8,15 @@
           "name": "minecraft:warped_fungus_on_a_stick",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"translate\":\"Wait a Minute!\",\"color\":\"red\",\"bold\":true,\"italic\":false}'},CustomModelData:6,System:1b,Wait:1b}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{System:1b,Wait:1b}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "{\"translate\":\"Wait a Minute!\",\"color\":\"red\",\"bold\":true,\"italic\":false}",
+                "minecraft:custom_model_data": 6
+              }
             }
           ]
         }

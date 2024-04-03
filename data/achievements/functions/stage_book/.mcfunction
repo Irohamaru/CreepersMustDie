@@ -19,5 +19,5 @@ data modify block 2 2 2 front_text.messages[0] set value '["",{"translate":"Stag
 function achievements:stage_book/loop
 
 data modify storage achievements: pages prepend from block 2 2 2 front_text.messages[0]
-data modify block 85 102 49 Book.tag.pages set from storage achievements: pages
+data modify block 85 102 49 Book.components.minecraft:written_book_content.pages set from storage achievements: pages
 data modify block 85 102 49 Page set value 0

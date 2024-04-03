@@ -30,10 +30,10 @@ scoreboard players operation @s Emerald /= #100 _
 function mob:ai/route/stack/reset
 
 function main:id/set
-execute store result entity @s ArmorItems[3].tag.EnemyID int 1 run scoreboard players get @s ID
-data modify entity @s ArmorItems[3].tag.EnemyID set string entity @s ArmorItems[3].tag.EnemyID
+execute store result entity @s ArmorItems[3].components.minecraft:custom_data.EnemyID int 1 run scoreboard players get @s ID
+data modify entity @s ArmorItems[3].components.minecraft:custom_data.EnemyID set string entity @s ArmorItems[3].components.minecraft:custom_data.EnemyID
 
 execute positioned ~ ~-50 ~ run function mob:summon/data/wandering_villager
 execute positioned ~ ~-50 ~ store result score @e[type=wandering_trader,distance=0] Group run data get storage stage: Enemy.Group
 
-execute positioned ~ ~-50 ~ run data modify entity @s ArmorItems[3].tag.Owner set from entity @e[type=wandering_trader,distance=0,limit=1] UUID
+execute positioned ~ ~-50 ~ run data modify entity @s ArmorItems[3].components.minecraft:custom_data.Owner set from entity @e[type=wandering_trader,distance=0,limit=1] UUID

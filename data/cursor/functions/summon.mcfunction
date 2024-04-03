@@ -2,8 +2,8 @@ summon minecraft:armor_stand ~ ~ ~ {Tags:[PlacingTrap],Glowing:1b,NoGravity:1b,I
 
 execute as @e[type=item_display,tag=PlacingTrap,tag=!Initialized,limit=1,distance=..0.01] store result entity @s Rotation[0] float 1 run scoreboard players operation @s TrapRotation = # TrapRotation
 
-data modify entity @e[type=item_display,tag=PlacingTrap,tag=!Initialized,limit=1,distance=..0.01] item.tag.CustomModelData set from storage item: Item.tag.CustomModelData
-data modify entity @e[type=item_display,tag=PlacingTrap,tag=!Initialized,limit=1,distance=..0.01] transformation merge from storage item: Item.tag.transformation
+data modify entity @e[type=item_display,tag=PlacingTrap,tag=!Initialized,limit=1,distance=..0.01] item.components.minecraft:custom_model_data set from storage item: Item.components.minecraft:custom_model_data
+data modify entity @e[type=item_display,tag=PlacingTrap,tag=!Initialized,limit=1,distance=..0.01] transformation merge from storage item: Item.components.minecraft:custom_data.transformation
 
 scoreboard players set @e[tag=PlacingTrap,tag=!Initialized,distance=..0.01] ParentID 0
 tag @e[tag=PlacingTrap,tag=!Initialized,distance=..0.01] add Initialized

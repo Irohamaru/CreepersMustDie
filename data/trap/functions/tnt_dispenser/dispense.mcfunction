@@ -1,4 +1,4 @@
-summon item_display ^ ^-0.5 ^1 {Tags:[Trap,TNT,Parent],Team:"Red",item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:130}}}
+summon item_display ^ ^-0.5 ^1 {Tags:[Trap,TNT,Parent],Team:"Red",item:{id:"minecraft:carrot_on_a_stick",Count:1b,components:{"minecraft:custom_model_data":130}}}
 execute positioned ^ ^-0.5 ^1 as @e[tag=TNT,distance=..0.01,limit=1] run function trap:tnt/init
 
 #TNTのParentIDはHoldしたプレイヤーと親、親と子の紐づけで全て使用済みなのでGroupでリンク

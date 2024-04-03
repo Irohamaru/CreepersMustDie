@@ -1,5 +1,5 @@
 data remove block 0 0 0 Items
-data modify block 0 0 0 Items set from entity @s Inventory[{Slot:103b}].tag.Inventory
+data modify block 0 0 0 Items set from entity @s Inventory[{Slot:103b}].components.minecraft:custom_data.Inventory
 
 #スニーク中に拾ったトラップを返す
 clear @s warped_fungus_on_a_stick

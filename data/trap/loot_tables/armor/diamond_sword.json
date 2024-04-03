@@ -8,8 +8,35 @@
           "name": "minecraft:diamond_sword",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"translate\":\"Diamond Sword\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}',Lore:['{\"translate\":\"A Sharpened Diamond Sword\",\"color\":\"white\",\"italic\":false}','{\"translate\":\"Weapon\",\"color\":\"dark_purple\",\"italic\":false}']},Unbreakable:1b,AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:40,Operation:0,UUID:[I;1,0,0,1],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:1.6,Operation:0,UUID:[I;1,0,0,2],Slot:\"mainhand\"}]}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "{\"translate\":\"Diamond Sword\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}",
+                "minecraft:lore": [
+                  "{\"translate\":\"A Sharpened Diamond Sword\",\"color\":\"white\",\"italic\":false}",
+                  "{\"translate\":\"Weapon\",\"color\":\"dark_purple\",\"italic\":false}"
+                ],
+                "minecraft:unbreakable": {},
+                "attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "minecraft:generic.attack_damage",
+                      "slot": "mainhand",
+                      "uuid": [1,0,0,1],
+                      "name": "generic.attack_damage",
+                      "amount": 40.0,
+                      "operation": "add_value"
+                    },
+                    {
+                      "type": "minecraft:generic.attack_speed",
+                      "slot": "mainhand",
+                      "uuid": [1,0,0,2],
+                      "name": "generic.attack_speed",
+                      "amount": 1.6,
+                      "operation": "add_value"
+                    }
+                  ]
+                }
+              }
             }
           ]
         }

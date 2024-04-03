@@ -1,6 +1,6 @@
-data modify entity @s item.tag.CustomModelData set value 81
+data modify entity @s item.components.minecraft:custom_model_data set value 81
 
-summon minecraft:item_display ~ ~ ~ {Tags:[Mace,Trap],Team:Red,item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:82}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[2f,2f,2f],translation:[0f,-2.25f,0f]}}
+summon minecraft:item_display ~ ~ ~ {Tags:[Mace,Trap],Team:Red,item:{id:"minecraft:carrot_on_a_stick",Count:1b,components:{"minecraft:custom_model_data":82}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[2f,2f,2f],translation:[0f,-2.25f,0f]}}
 ride @e[tag=Mace,distance=..0.01,limit=1] mount @s
 execute on passengers run tp @s ~ ~ ~ ~ ~
 function main:id/set

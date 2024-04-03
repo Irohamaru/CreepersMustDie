@@ -8,8 +8,23 @@
           "name": "minecraft:carrot_on_a_stick",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"translate\":\"Spring Trap\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}',Lore:['{\"translate\":\"Blows up Enemies With a Spring\",\"color\":\"white\",\"italic\":false}','{\"translate\":\"%s Key to Rotate\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"keybind\":\"key.swapOffhand\",\"color\":\"light_purple\",\"bold\":true,\"italic\":false}]}','{\"translate\":\"Trap\",\"color\":\"dark_purple\",\"italic\":false}','{\"translate\":\"Cost: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"125\",\"color\":\"green\"}]}','{\"translate\":\"Size: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"2*2\",\"color\":\"yellow\"}]}','{\"translate\":\"Face: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"translate\":\"Floor\",\"color\":\"light_purple\"}]}']},Cost:125,CustomModelData:70,Size:\"2*2\",Face:[Floor],Tags:[Trap,FixedTrap,SpringTrap,Parent],transformation:{left_rotation:{angle:0.785,axis:[1f,0f,0f]},scale:[2.1f,2.1f,2.1f],translation:[0f,2.1f,1f]}}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{Cost:125,Size:\"2*2\",Face:[Floor],Tags:[Trap,FixedTrap,SpringTrap,Parent],transformation:{left_rotation:{angle:0.785,axis:[1f,0f,0f]},scale:[2.1f,2.1f,2.1f],translation:[0f,2.1f,1f]}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "{\"translate\":\"Spring Trap\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}",
+                "minecraft:lore": [
+                  "{\"translate\":\"Blows up Enemies With a Spring\",\"color\":\"white\",\"italic\":false}",
+                  "{\"translate\":\"%s Key to Rotate\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"keybind\":\"key.swapOffhand\",\"color\":\"light_purple\",\"bold\":true,\"italic\":false}]}",
+                  "{\"translate\":\"Trap\",\"color\":\"dark_purple\",\"italic\":false}",
+                  "{\"translate\":\"Cost: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"125\",\"color\":\"green\"}]}",
+                  "{\"translate\":\"Size: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"2*2\",\"color\":\"yellow\"}]}",
+                  "{\"translate\":\"Face: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"translate\":\"Floor\",\"color\":\"light_purple\"}]}"
+                ],
+                "minecraft:custom_model_data": 70
+              }
             }
           ]
         }

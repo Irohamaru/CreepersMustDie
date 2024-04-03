@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{Magic:1b,FireRing:1b,MP:35,Cooldown:40}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "{\"translate\":\"Fire Ring\",\"color\":\"green\",\"bold\":true,\"italic\":false}",
+                "minecraft:lore": [
+                  "[{\"translate\":\"Magic: \",\"color\":\"aqua\",\"italic\":false},{\"translate\":\"Fireball\"}]",
+                  "[{\"translate\":\"MP: \",\"color\":\"blue\",\"italic\":false},{\"text\":\"25\"}]",
+                  "{\"translate\":\"Fires A Fireball That Explodes on Hit.\",\"color\":\"white\",\"italic\":false}"
+                ],
+                "minecraft:custom_model_data": 100
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4,4 +4,4 @@ execute if block ^ ^ ^ #cursor:no_collision if block ^ ^ ^0.5 #cursor:can_place_
 
 execute if entity @e[tag=FixedTrap,distance=..1] run scoreboard players set #Success _ 0
 
-execute if data storage item: Item.tag{Tags:[Barricade]} positioned ~-0.5 ~ ~-0.5 if entity @s[dx=0,dz=0] run scoreboard players set #Success _ 0
+execute if data storage item: Item.components.minecraft:custom_data{Tags:[Barricade]} positioned ~-0.5 ~ ~-0.5 if entity @s[dx=0,dz=0] run scoreboard players set #Success _ 0

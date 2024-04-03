@@ -1,7 +1,7 @@
 execute on vehicle run kill @s
 tag @s remove PlacingTrap
 data modify entity @s Glowing set value 0b
-data modify entity @s Tags append from storage item: Item.tag.Tags[]
+data modify entity @s Tags append from storage item: Item.components.minecraft:custom_data.Tags[]
 team join Red @s
 
 scoreboard players operation @s Emerald = _ Emerald

@@ -1,4 +1,4 @@
-execute store result score # MP run data get entity @s SelectedItem.tag.MP
+execute store result score # MP run data get storage item: Item.components.minecraft:custom_data.MP
 
 execute unless score @s MP >= # MP run title @s actionbar {"translate":"Not Enough MP!","color":"red"}
 execute unless score @s MP >= # MP run playsound block.dispenser.fail master @s ~ ~ ~ 1 1

@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~ ~ {Tags:[AB.ShootedArrow,Trap],Team:Red,Invisible:1b,Marker:1b,Passengers:[{id:"minecraft:item_display",Tags:[AB.ShootedArrow,Trap],Team:Red,item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:163}}}]}
+summon minecraft:armor_stand ~ ~ ~ {Tags:[AB.ShootedArrow,Trap],Team:Red,Invisible:1b,Marker:1b,Passengers:[{id:"minecraft:item_display",Tags:[AB.ShootedArrow,Trap],Team:Red,item:{id:"minecraft:carrot_on_a_stick",Count:1b,components:{"minecraft:custom_model_data":163}}}]}
 execute on vehicle on passengers if entity @s[tag=AB.Arms] run data modify entity @s transformation.scale[2] set value 2.1f
 execute on vehicle on passengers if entity @s[tag=AB.Arrow] run data modify entity @s transformation.translation[2] set value 0f
 execute on vehicle on passengers if entity @s[tag=AB.Tray] run data modify entity @s transformation.translation[2] set value 0f

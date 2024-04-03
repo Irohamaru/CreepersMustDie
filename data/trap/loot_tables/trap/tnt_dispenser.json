@@ -8,8 +8,22 @@
           "name": "minecraft:carrot_on_a_stick",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"translate\":\"TNT Dispenser\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}',Lore:['{\"translate\":\"Generates TNT Every 30 Seconds\",\"color\":\"white\",\"italic\":false}','{\"translate\":\"Trap\",\"color\":\"dark_purple\",\"italic\":false}','{\"translate\":\"Cost: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"350\",\"color\":\"green\"}]}','{\"translate\":\"Size: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"2*2\",\"color\":\"yellow\"}]}','{\"translate\":\"Face: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"translate\":\"Wall\",\"color\":\"light_purple\"}]}']},Cost:350,CustomModelData:140,Size:\"2*2\",Face:[Wall],Tags:[Trap,FixedTrap,TNTDispenser],transformation:{scale:[1.6f,1.6f,1f],translation:[0f,0f,0.35f]}}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{Cost:350,Size:\"2*2\",Face:[Wall],Tags:[Trap,FixedTrap,TNTDispenser],transformation:{scale:[1.6f,1.6f,1f],translation:[0f,0f,0.35f]}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "{\"translate\":\"TNT Dispenser\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}",
+                "minecraft:lore": [
+                  "{\"translate\":\"Generates TNT Every 30 Seconds\",\"color\":\"white\",\"italic\":false}",
+                  "{\"translate\":\"Trap\",\"color\":\"dark_purple\",\"italic\":false}",
+                  "{\"translate\":\"Cost: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"350\",\"color\":\"green\"}]}",
+                  "{\"translate\":\"Size: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"2*2\",\"color\":\"yellow\"}]}",
+                  "{\"translate\":\"Face: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"translate\":\"Wall\",\"color\":\"light_purple\"}]}"
+                ],
+                "minecraft:custom_model_data": 140
+              }
             }
           ]
         }

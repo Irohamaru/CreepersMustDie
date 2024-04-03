@@ -8,8 +8,22 @@
           "name": "minecraft:carrot_on_a_stick",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"translate\":\"Barricade\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}',Lore:['{\"translate\":\"Blocks Invasion Routes\",\"color\":\"white\",\"italic\":false}','{\"translate\":\"Trap\",\"color\":\"dark_purple\",\"italic\":false}','{\"translate\":\"Cost: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"80\",\"color\":\"green\"}]}','{\"translate\":\"Size: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"2*2\",\"color\":\"yellow\"}]}','{\"translate\":\"Face: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"translate\":\"Floor\",\"color\":\"light_purple\"}]}']},Cost:80,CustomModelData:50,Size:\"2*2\",Face:[Floor],Tags:[Trap,FixedTrap,Barricade],transformation:{scale:[2f,1.4f,2f],translation:[0f,0.7f,0f]}}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{Cost:80,Size:\"2*2\",Face:[Floor],Tags:[Trap,FixedTrap,Barricade],transformation:{scale:[2f,1.4f,2f],translation:[0f,0.7f,0f]}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "{\"translate\":\"Barricade\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}",
+                "minecraft:lore": [
+                  "{\"translate\":\"Blocks Invasion Routes\",\"color\":\"white\",\"italic\":false}",
+                  "{\"translate\":\"Trap\",\"color\":\"dark_purple\",\"italic\":false}",
+                  "{\"translate\":\"Cost: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"80\",\"color\":\"green\"}]}",
+                  "{\"translate\":\"Size: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"2*2\",\"color\":\"yellow\"}]}",
+                  "{\"translate\":\"Face: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"translate\":\"Floor\",\"color\":\"light_purple\"}]}"
+                ],
+                "minecraft:custom_model_data": 50
+              }
             }
           ]
         }
