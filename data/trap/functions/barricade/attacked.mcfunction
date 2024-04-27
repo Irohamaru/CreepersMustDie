@@ -10,5 +10,5 @@ scoreboard players operation @s[tag=!InitialPlace] Emerald *= @s HP
 scoreboard players operation @s[tag=!InitialPlace] Emerald /= @s MaxHP
 
 playsound minecraft:entity.zombie.attack_wooden_door master @a ~ ~ ~ 0.3 1.2
-particle block oak_planks ~ ~1 ~ 0.5 0.3 0.5 1 10 force
+particle block{block_state:"oak_planks"} ~ ~1 ~ 0.5 0.3 0.5 1 10 force
 

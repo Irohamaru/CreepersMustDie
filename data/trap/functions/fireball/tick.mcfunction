@@ -4,7 +4,7 @@ execute if score #Success _ matches 0 positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[
 execute if score #Success _ matches 0 if score @s Interval matches ..0 run function trap:fireball/explode
 
 particle flame ~ ~ ~ 0.2 0.2 0.2 0.12 2 force
-particle dust 100000000 100 0 2 ^ ^ ^ 0.2 0.2 0.2 1 1 force
+particle dust{color:[100000000,100,0],scale:2} ^ ^ ^ 0.2 0.2 0.2 1 1 force
 
 tp @s ^ ^ ^1
 execute on passengers rotated as @s run tp @s ~ ~ ~ ~5 ~

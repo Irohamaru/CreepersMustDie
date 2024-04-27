@@ -1,5 +1,5 @@
 particle cloud ^ ^0.2 ^ 0.2 0.2 0.2 0.2 30 force
-particle block dirt ^ ^0.5 ^ 1.5 0.5 1.5 1 50 force
+particle block{block_state:"dirt"} ^ ^0.5 ^ 1.5 0.5 1.5 1 50 force
 playsound minecraft:entity.zombie.attack_iron_door master @a ~ ~ ~ 0.5 0
 playsound minecraft:entity.zombie.break_wooden_door master @a ~ ~ ~ 0.3 0
 

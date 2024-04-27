@@ -11,8 +11,8 @@ execute if score @s Interval matches 120 run playsound minecraft:entity.iron_gol
 
 execute store result entity @s Rotation[1] float 1 run scoreboard players get # _
 
-execute if score @s Interval matches 50 rotated ~ 0 run particle item polished_blackstone ^ ^ ^-2.5 1 0 1 0 5 force
-execute if score @s Interval matches 120 rotated ~ 0 run particle item polished_blackstone ^ ^ ^2.5 1 0 1 0 5 force
+execute if score @s Interval matches 50 rotated ~ 0 run particle item{item:"polished_blackstone"} ^ ^ ^-2.5 1 0 1 0 5 force
+execute if score @s Interval matches 120 rotated ~ 0 run particle item{item:"polished_blackstone"} ^ ^ ^2.5 1 0 1 0 5 force
 
 execute if score @s Interval matches 1..50 positioned ^ ^-2.8 ^ rotated ~180 ~ run function trap:swing_mace/attack
 execute if score @s Interval matches 71..120 positioned ^ ^-2.8 ^ run function trap:swing_mace/attack

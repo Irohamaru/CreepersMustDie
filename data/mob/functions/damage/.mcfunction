@@ -1,6 +1,6 @@
 scoreboard players set _ HP 0
 execute store result score _ _ run data get storage mob: Damage.Physical
-execute if score _ _ matches 1.. run particle item nether_wart ~ ~1 ~ 0.2 0.5 0.2 0.1 30 force
+execute if score _ _ matches 1.. run particle item{item:"nether_wart"} ~ ~1 ~ 0.2 0.5 0.2 0.1 30 force
 scoreboard players operation _ HP += _ _
 
 execute store result score _ _ run data get storage mob: Damage.Fire
