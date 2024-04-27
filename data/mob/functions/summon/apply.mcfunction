@@ -37,3 +37,5 @@ execute positioned ~ ~-50 ~ run function mob:summon/data/wandering_villager
 execute positioned ~ ~-50 ~ store result score @e[type=wandering_trader,distance=0] Group run data get storage stage: Enemy.Group
 
 execute positioned ~ ~-50 ~ run data modify entity @s ArmorItems[3].components.minecraft:custom_data.Owner set from entity @e[type=wandering_trader,distance=0,limit=1] UUID
+execute if entity @s[tag=Float] positioned ~ ~-50 ~ run attribute @e[type=wandering_trader,distance=0,limit=1] generic.scale base set 0.5
+execute if entity @s[tag=Float] positioned ~ ~-50 ~ run effect give @e[type=wandering_trader,distance=0,limit=1] slow_falling infinite 0 false

@@ -12,6 +12,7 @@ execute if entity @s[tag=Zombie] run function mob:summon/data/zombie
 execute if entity @s[tag=Skeleton] run function mob:summon/data/skeleton
 execute if entity @s[tag=Spider] run function mob:summon/data/spider
 execute if entity @s[tag=Witch] run function mob:summon/data/witch
+execute if entity @s[tag=Phantom] run function mob:summon/data/phantom
 execute if entity @s[tag=RouteGuide] run function mob:summon/data/route_guide
 
 data modify entity @s Tags set value [Portal]
