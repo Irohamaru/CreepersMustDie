@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": "minecraft:bow"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "player:bow/trigger"
+  }
+}
