@@ -3,7 +3,7 @@ data modify block 0 0 0 Items set from entity @s Inventory[{Slot:103b}].componen
 
 #スニーク中に拾ったトラップを返す
 clear @s warped_fungus_on_a_stick
-clear @s carrot_on_a_stick[minecraft:custom_data={Sale:1b}]
+clear @s carrot_on_a_stick[minecraft:custom_data~{Sale:1b}]
 data remove block 0 2 0 Items
 data modify block 0 2 0 Items append from entity @s Inventory[{Slot:0b}]
 data modify block 0 2 0 Items append from entity @s Inventory[{Slot:1b}]
