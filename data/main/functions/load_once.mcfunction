@@ -3,6 +3,9 @@ scoreboard objectives add UseWarpedFungus minecraft.used:warped_fungus_on_a_stic
 scoreboard objectives add UseCrossbow minecraft.used:minecraft.crossbow
 scoreboard objectives add UseBow minecraft.used:minecraft.bow
 scoreboard objectives add UsingBow dummy
+scoreboard objectives add UsingMagic dummy
+scoreboard objectives add MagicTime dummy
+scoreboard objectives add SelectedItemSlot dummy
 scoreboard objectives add Sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add Death minecraft.custom:minecraft.deaths
 scoreboard objectives add Talk minecraft.custom:minecraft.talked_to_villager

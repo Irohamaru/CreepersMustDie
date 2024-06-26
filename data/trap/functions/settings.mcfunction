@@ -13,4 +13,4 @@ data modify storage trap: LightningSpire set value {Lightning:5}
 data modify storage trap: LightningSpireImpact set value {Lightning:50,Stun:40,Motion:0.6}
 data modify storage trap: AutoBallista set value {Physical:32,Stun:10,Motion:0.4}
 
-data modify storage trap: Fireball set value {Fire:80,Stun:50,Motion:1.2}
+data modify storage trap: Fireball set value {}

@@ -1,0 +1,39 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{Magic:1b,Fireball:1b,Cooldown:30}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "{\"translate\":\"Flame Rod\",\"color\":\"green\",\"bold\":true,\"italic\":false}",
+                "minecraft:lore": [
+                  "[{\"translate\":\"Magic: \",\"color\":\"blue\",\"italic\":false},{\"translate\":\"Fireball\",\"color\":\"aqua\"}]",
+                  "{\"translate\":\"Fires A Fireball That Explodes on Hit.\",\"color\":\"white\",\"italic\":false}"
+                ],
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                },
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:quick_charge": 10
+                  },
+                  "show_in_tooltip": false
+                },
+                "minecraft:custom_model_data": 100
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

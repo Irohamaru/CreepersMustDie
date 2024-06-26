@@ -9,6 +9,7 @@ execute if entity @s[scores={Cooldown=1..}] run function player:cooldown
 execute if entity @s[scores={LeaveGame=1..}] run function player:leave_game
 execute if entity @s[scores={UseCrossbow=1..}] run function player:use_crossbow
 execute if entity @s[scores={UsingBow=1..}] run function player:bow/tick
+execute if entity @s[scores={UsingMagic=1..}] run function player:magic/check_cooldown
 execute if entity @s[scores={UseWarpedFungus=1..}] run function player:use_warped_fungus/
 execute if entity @s[scores={Sneak=1..}] run function player:sneak/
 execute if entity @s[scores={Talk=1..}] run function player:talk
