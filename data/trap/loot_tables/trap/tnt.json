@@ -16,7 +16,7 @@
               "components": {
                 "minecraft:custom_name": "{\"translate\":\"TNT\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}",
                 "minecraft:lore": [
-                  "{\"translate\":\"Blows up Enemies With a Spring\",\"color\":\"white\",\"italic\":false}",
+                  "{\"translate\":\"Explodes on Impact And Blows Up Enemies.\",\"color\":\"white\",\"italic\":false}",
                   "{\"translate\":\"%s to Grab And Throw\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"keybind\":\"key.use\",\"color\":\"light_purple\",\"bold\":true,\"italic\":false}]}",
                   "{\"translate\":\"Trap\",\"color\":\"dark_purple\",\"italic\":false}",
                   "{\"translate\":\"Cost: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"80\",\"color\":\"green\"}]}",
