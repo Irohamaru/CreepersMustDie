@@ -1,0 +1,33 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{Cost:150,Size:\"1*1\",Face:[Floor],Tags:[Trap,FixedTrap,SnowGolem],transformation:{translation:[0f,0.5f,0f]}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "{\"translate\":\"Snow Golem\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}",
+                "minecraft:lore": [
+                  "{\"translate\":\"Assembles an Snow Golem\",\"color\":\"white\",\"italic\":false}",
+                  "{\"translate\":\"Trap\",\"color\":\"dark_purple\",\"italic\":false}",
+                  "{\"translate\":\"Cost: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"150\",\"color\":\"green\"}]}",
+                  "{\"translate\":\"Size: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"text\":\"1*1\",\"color\":\"yellow\"}]}",
+                  "{\"translate\":\"Face: %s\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"translate\":\"Floor\",\"color\":\"light_purple\"}]}"
+                ],
+                "minecraft:custom_model_data": 170
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
