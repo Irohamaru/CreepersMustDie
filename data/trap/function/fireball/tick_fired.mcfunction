@@ -4,6 +4,6 @@ execute if score #Success _ matches 0 positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[
 execute if score #Success _ matches 0 if score @s Interval matches ..0 run function trap:fireball/explode
 
 tp @s ^ ^ ^1
-execute on passengers rotated as @s run tp @s ~ ~ ~ ~5 ~
+#execute on passengers rotated as @s run tp @s ~ ~ ~ ~5 ~
 
 scoreboard players remove @s Interval 1

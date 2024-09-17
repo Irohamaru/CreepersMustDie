@@ -1,6 +1,6 @@
 execute store result entity 0-0-0-0-0 Rotation[0] float 1 run scoreboard players get @s TrapRotation
 execute rotated as 0-0-0-0-0 positioned ^ ^ ^8.5 positioned ~-8 ~-8 ~-8 run tag @e[tag=Enemy,dx=15,dy=15,dz=15] add AB.Target
-execute positioned as @e[tag=AB.Target,distance=..30,limit=1,sort=nearest] positioned ~ ~1 ~ positioned ^ ^ ^10 facing entity @s feet facing ^ ^ ^-1 positioned as @s run tp @s ^ ^ ^ ~ ~
+execute positioned as @n[tag=AB.Target,distance=..30] positioned ~ ~1 ~ positioned ^ ^ ^10 facing entity @s feet facing ^ ^ ^-1 positioned as @s run tp @s ^ ^ ^ ~ ~
 execute at @s on passengers run tp @s ~ ~ ~ ~ ~
 execute store success score # _ run tag @e[tag=AB.Target,distance=..30] remove AB.Target
 
